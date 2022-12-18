@@ -27,7 +27,7 @@ public class PostmanEchoTest {
                 .body("data", equalTo("Netology Echo Postman"))
         ;
     }
-    
+
     @Test
     public void shouldCheckBodyId() {
         // Given - When - Then
@@ -39,7 +39,7 @@ public class PostmanEchoTest {
                 .then()
                 .statusCode(200)
                 .contentType(ContentType.JSON)
-                .body("data", equalTo("id:1"))
+                .body("data", equalTo("id:2"))
         ;
     }
 }
